@@ -1,0 +1,61 @@
+{
+   "abstract" : "Locale::CLDR - Data Package Locales::Bg.pm",
+   "author" : [
+      "John Imrie <john.imrie1@gmail.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4205",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Locale-CLDR-Locales-Bg.pm",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::Exception" : "0",
+            "Test::More" : "0.98",
+            "ok" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DateTime" : "0.72",
+            "Locale::CLDR" : "0.026006",
+            "Moose" : "2.0401",
+            "MooseX::ClassAttribute" : "0.26",
+            "perl" : "v5.10.0",
+            "version" : "0.95"
+         }
+      }
+   },
+   "provides" : {
+      "Locale::CLDR::Locales::Bg" : {
+         "file" : "lib/Locale/CLDR/Locales/Bg.pm",
+         "version" : "v0.26.6"
+      },
+      "Locale::CLDR::Locales::Bg::Any" : {
+         "file" : "lib/Locale/CLDR/Locales/Bg/Any.pm",
+         "version" : "v0.26.6"
+      },
+      "Locale::CLDR::Locales::Bg::Any::Bg" : {
+         "file" : "lib/Locale/CLDR/Locales/Bg/Any/Bg.pm",
+         "version" : "v0.26.6"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "v0.26.6"
+}

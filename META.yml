@@ -1,0 +1,37 @@
+---
+abstract: 'Locale::CLDR - Data Package Locales::Bg.pm'
+author:
+  - 'John Imrie <john.imrie1@gmail.com>'
+build_requires:
+  Test::Exception: '0'
+  Test::More: '0.98'
+  ok: '0'
+configure_requires:
+  Module::Build: '0.40'
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.140640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Locale-CLDR-Locales-Bg.pm
+provides:
+  Locale::CLDR::Locales::Bg:
+    file: lib/Locale/CLDR/Locales/Bg.pm
+    version: v0.26.6
+  Locale::CLDR::Locales::Bg::Any:
+    file: lib/Locale/CLDR/Locales/Bg/Any.pm
+    version: v0.26.6
+  Locale::CLDR::Locales::Bg::Any::Bg:
+    file: lib/Locale/CLDR/Locales/Bg/Any/Bg.pm
+    version: v0.26.6
+requires:
+  DateTime: '0.72'
+  Locale::CLDR: '0.026006'
+  Moose: '2.0401'
+  MooseX::ClassAttribute: '0.26'
+  perl: v5.10.0
+  version: '0.95'
+resources:
+  license: http://dev.perl.org/licenses/
+version: v0.26.6
