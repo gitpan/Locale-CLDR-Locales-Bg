@@ -1,11 +1,17 @@
+=head1
+
+Locale::CLDR::Locales::Bg - Package for language Bulgarian
+
+=cut
+
 package Locale::CLDR::Locales::Bg;
 # This file auto generated from Data\common\main\bg.xml
-#	on Mon 29 Dec 10:22:43 am GMT
+#	on Tue 30 Dec  9:06:44 pm GMT
 # XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.6');
+our $VERSION = version->declare('v0.26.7');
 
 use v5.10;
 use mro 'c3';
@@ -5747,68 +5753,24 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'indian') {
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-			last SWITCH;
-			}
 			if ($_ eq 'gregorian') {
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
 				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
 				return 'earlyMorning' if $time >= 500
 					&& $time < 600;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
 				return 'night' if $time >= 2200
 					&& $time < 2400;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
 				return 'weeHours' if $time >= 0000
 					&& $time < 500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
 				return 'morning' if $time >= 600
 					&& $time < 1000;
 			last SWITCH;
@@ -5817,20 +5779,42 @@ has 'day_period_data' => (
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
 				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
 				return 'earlyMorning' if $time >= 500
 					&& $time < 600;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
 				return 'night' if $time >= 2200
 					&& $time < 2400;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
 				return 'weeHours' if $time >= 0000
 					&& $time < 500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
 				return 'morning' if $time >= 600
 					&& $time < 1000;
 			last SWITCH;
@@ -5839,20 +5823,42 @@ has 'day_period_data' => (
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
 				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
 				return 'earlyMorning' if $time >= 500
 					&& $time < 600;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
 				return 'night' if $time >= 2200
 					&& $time < 2400;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
 				return 'weeHours' if $time >= 0000
 					&& $time < 500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
 				return 'morning' if $time >= 600
 					&& $time < 1000;
 			last SWITCH;
@@ -5869,14 +5875,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
+					'pm' => q{сл.об.},
 					'noon' => q{пл.},
 					'am' => q{пр.об.},
-					'pm' => q{сл.об.},
 				},
 				'wide' => {
-					'am' => q{пр.об.},
 					'noon' => q{пладне},
 					'pm' => q{сл.об.},
+					'am' => q{пр.об.},
 				},
 			},
 		},

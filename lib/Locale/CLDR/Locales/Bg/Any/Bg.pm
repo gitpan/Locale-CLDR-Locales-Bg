@@ -1,11 +1,17 @@
+=head1
+
+Locale::CLDR::Locales::Bg::Any::Bg - Package for language Bulgarian
+
+=cut
+
 package Locale::CLDR::Locales::Bg::Any::Bg;
 # This file auto generated from Data\common\main\bg_BG.xml
-#	on Mon 29 Dec 10:25:25 am GMT
+#	on Tue 30 Dec  9:09:25 pm GMT
 # XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.6');
+our $VERSION = version->declare('v0.26.7');
 
 use v5.10;
 use mro 'c3';

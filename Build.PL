@@ -11,7 +11,7 @@ my $builder = Module::Build->new(
         'Moose'                     => '2.0401',
         'MooseX::ClassAttribute'    => '0.26',
         'perl'                      => '5.10.0',
-		'Locale::CLDR'              => '0.26.6'
+		'Locale::CLDR'              => '0.26.7'
     },
     dist_author         => q{John Imrie <john.imrie1@gmail.com>},
     dist_version_from   => 'lib/Locale/CLDR/Locales/Bg.pm',

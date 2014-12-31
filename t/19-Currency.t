@@ -6,11 +6,12 @@ use warnings;
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
-use Test::More tests => 2;
+use Test::More tests => 3;
 use Test::Exception;
 
 use ok 'Locale::CLDR';
 
-my $locale_en = Locale::CLDR->new('en_US');
+my $locale = Locale::CLDR->new('bg_BG');
 
-is($locale_en->format_number(12345678, '¤###,###'), 'US$12,345,678.00', 'Format currency with default currency');
+is($locale->format_number(12345678, '¤###,###'), 'лв.12 345 678,00', 'Format currency with default currency');
+is($locale->format_number(12345678.9, '¤###,###', 'USD'), 'US$12 345 678,90', 'Format currency with explicit currency');
