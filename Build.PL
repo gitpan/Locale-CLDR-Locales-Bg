@@ -11,7 +11,7 @@ my $builder = Module::Build->new(
         'Moose'                     => '2.0401',
         'MooseX::ClassAttribute'    => '0.26',
         'perl'                      => '5.10.0',
-		'Locale::CLDR'              => '0.26.7'
+		'Locale::CLDR'              => '0.26.8'
     },
     dist_author         => q{John Imrie <john.imrie1@gmail.com>},
     dist_version_from   => 'lib/Locale/CLDR/Locales/Bg.pm',
@@ -23,7 +23,7 @@ my $builder = Module::Build->new(
     add_to_cleanup      => [ 'Locale-CLDR-Locales::Bg.pm-*' ],
 	configure_requires => { 'Module::Build' => '0.40' },
     create_makefile_pl => 'traditional',
-	release_status => 'stable',
+	release_status => 'unstable',
 	dist_abstract => 'Locale::CLDR - Data Package Locales::Bg.pm',
 );
 

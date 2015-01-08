@@ -29,7 +29,7 @@
       "runtime" : {
          "requires" : {
             "DateTime" : "0.72",
-            "Locale::CLDR" : "0.026007",
+            "Locale::CLDR" : "0.026008",
             "Moose" : "2.0401",
             "MooseX::ClassAttribute" : "0.26",
             "perl" : "v5.10.0",
@@ -40,22 +40,22 @@
    "provides" : {
       "Locale::CLDR::Locales::Bg" : {
          "file" : "lib/Locale/CLDR/Locales/Bg.pm",
-         "version" : "v0.26.7"
+         "version" : "v0.26.8"
       },
       "Locale::CLDR::Locales::Bg::Any" : {
          "file" : "lib/Locale/CLDR/Locales/Bg/Any.pm",
-         "version" : "v0.26.7"
+         "version" : "v0.26.8"
       },
       "Locale::CLDR::Locales::Bg::Any::Bg" : {
          "file" : "lib/Locale/CLDR/Locales/Bg/Any/Bg.pm",
-         "version" : "v0.26.7"
+         "version" : "v0.26.8"
       }
    },
-   "release_status" : "stable",
+   "release_status" : "unstable",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.26.7"
+   "version" : "v0.26.8"
 }

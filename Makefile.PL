@@ -5,18 +5,18 @@ WriteMakefile
 (
   'NAME' => 'Locale::CLDR::Locales::Bg.pm',
   'VERSION_FROM' => 'lib/Locale/CLDR/Locales/Bg.pm',
-  'INSTALLDIRS' => 'site',
-  'PL_FILES' => {},
-  'EXE_FILES' => [],
   'PREREQ_PM' => {
-                   'DateTime' => '0.72',
-                   'ok' => 0,
-                   'Test::Exception' => 0,
-                   'Locale::CLDR' => '0.026007',
                    'Moose' => '2.0401',
-                   'version' => '0.95',
+                   'Test::Exception' => 0,
                    'Test::More' => '0.98',
-                   'MooseX::ClassAttribute' => '0.26'
-                 }
+                   'Locale::CLDR' => '0.026008',
+                   'MooseX::ClassAttribute' => '0.26',
+                   'version' => '0.95',
+                   'DateTime' => '0.72',
+                   'ok' => 0
+                 },
+  'EXE_FILES' => [],
+  'INSTALLDIRS' => 'site',
+  'PL_FILES' => {}
 )
 ;
